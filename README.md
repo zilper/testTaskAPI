@@ -17,10 +17,7 @@
 ### - git clone https://github.com/zilper/testTaskAPI
 
 ### 3. Встановити залежності:
-### - **Java JDK 17+**
-### - **Apache Maven**
-### - **Allure plugin**
-### - IDE (рекомендовано **IntelliJ IDEA**)
+### - mvn clean install
 
 ## Параметри запуску:
 ### 1. Через консоль
