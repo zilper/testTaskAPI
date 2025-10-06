@@ -10,15 +10,17 @@ import static io.restassured.RestAssured.given;
 
 public class BaseAPI {
 
-    protected static Response sendGetRequest(String endpoint) {
+    protected static Response sendGetRequest(final String endpoint) {
         return given()
                 .baseUri(ConfigLoader.getProperty("base.url"))
                 .basePath(endpoint)
+                .accept(ContentType.JSON)
+                .contentType(ContentType.JSON)
                 .when()
                 .get();
     }
 
-    protected static Response sendPostRequest(String endpoint, Map<String, Object> requestBody) {
+    protected static Response sendPostRequest(final String endpoint, Map<String, Object> requestBody) {
         return given()
                 .baseUri(ConfigLoader.getProperty("base.url"))
                 .basePath(endpoint)
@@ -29,10 +31,13 @@ public class BaseAPI {
                 .post();
     }
 
-    protected static Response sendDeleteRequest(String endpoint) {
+    protected static Response sendDeleteRequest(final String endpoint, final String id) {
         return given()
                 .baseUri(ConfigLoader.getProperty("base.url"))
-                .basePath(endpoint)
+                .basePath(endpoint + "/{id}")
+                .pathParam("id", id)
+                .accept(ContentType.JSON)
+                .contentType(ContentType.JSON)
                 .when()
                 .delete();
     }

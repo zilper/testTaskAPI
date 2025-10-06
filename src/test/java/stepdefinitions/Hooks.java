@@ -4,7 +4,8 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.simple.SimpleLogger;
+
+import static context.CacheKey.*;
 
 public class Hooks {
 
@@ -12,12 +13,14 @@ public class Hooks {
 
     @Before
     public void setUp() {
-        System.setProperty(SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "TRACE");
-        log.trace("Trace start here");
+//        System.setProperty(SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "INFO");
+        log.info("Logs start here");
     }
 
     @After
-    public void afterScenario() {
+    public void tearDown() {
+        clearCache(RESPONSE);
+        log.info("Cache has been cleared");
     }
 
 }

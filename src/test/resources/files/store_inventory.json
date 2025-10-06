@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Forensic scientist": { "type": "integer" },
+    "sold": { "type": "integer" },
+    "SOLD": { "type": "integer" },
+    "2": { "type": "integer" },
+    "booked": { "type": "integer" },
+    "string": { "type": "integer" },
+    "alive": { "type": "integer" },
+    "panding": { "type": "integer" },
+    "pending": { "type": "integer" },
+    "available": { "type": "integer" },
+    "not available": { "type": "integer" },
+    "Alive": { "type": "integer" }
+  },
+  "required": [
+    "sold", "available", "pending"
+  ],
+  "additionalProperties": true
+}
