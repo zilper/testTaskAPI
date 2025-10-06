@@ -8,7 +8,7 @@
 ## Налаштування середовища
 
 ### 1. Встановити необхідне:
-### - **Java JDK 11+**
+### - **Java JDK 17+**
 ### - **Apache Maven**
 ### - **Allure Commandline**
 ### - IDE (рекомендовано **IntelliJ IDEA**)
@@ -17,7 +17,7 @@
 ### - git clone https://github.com/zilper/testTaskAPI
 
 ### 3. Встановити залежності:
-### - **Java JDK 11+**
+### - **Java JDK 17+**
 ### - **Apache Maven**
 ### - **Allure Commandline**
 ### - IDE (рекомендовано **IntelliJ IDEA**)
