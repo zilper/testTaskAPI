@@ -19,7 +19,7 @@
 ### 3. Встановити залежності:
 ### - **Java JDK 17+**
 ### - **Apache Maven**
-### - **Allure Commandline**
+### - **Allure plugin**
 ### - IDE (рекомендовано **IntelliJ IDEA**)
 
 ## Параметри запуску:
