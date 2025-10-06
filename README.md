@@ -10,7 +10,7 @@
 ### 1. Встановити необхідне:
 ### - **Java JDK 17+**
 ### - **Apache Maven**
-### - **Allure Commandline**
+### - **Allure plugin**
 ### - IDE (рекомендовано **IntelliJ IDEA**)
 
 ### 2. Склонувати проект:
